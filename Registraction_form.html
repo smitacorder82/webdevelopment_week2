@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration_Form</title>
+    <style>
+        body {
+          text-align: center;
+        background-color: azure;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        label {
+            text-align: left;
+            display: block;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <h1>Registration Form</h1>
+        <form id="registration-form" action="confirmation.html method="post" >
+            <!-- User input fields-->
+            <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Full Name"><br>
+            </div>
+            <div>
+         <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="namenumber@gmail.com"><br>
+           </div>
+           <div>
+         <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Username"><br>
+          </div>
+          <div>
+             <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="min. 8 characters"><br>
+         </div>
+            <!-- Password Strength -->
+            <div id="password-strength"></div>
+
+            <!-- Additional Fields-->
+            <!---
+            <label for="Adher no.">Adher no:</label>
+            <input type="number" id="number" name="number" placeholder="12 number"><br>
+            -->
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    
+
+   </body>
+   </html>
